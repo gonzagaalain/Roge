@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title> Animação HTML</title>
+<meta charset="utf-8">
+<meta name="author" content="Daniel">
+<meta name="description" content="descrição">
+<meta name="keywords" content="html5, css">
+
+<style>
+
+@keyframes anda {
+    0%{
+        transform: translateX(0);
+        background-color: yellow;
+    }
+
+    100%{
+        transform: translateX(300px);
+        background-color: blue;
+    }
+}
+
+ .anima-time1{
+     width: 80px;
+     height: 50px;
+     border: 2px solid red;
+ }
+
+ .anima-time2{
+     width: 80px;
+     height: 50px;
+     border: 2px solid red;
+ }
+
+ .anima-time3{
+     width: 80px;
+     height: 50px;
+     border: 2px solid red;
+ }
+
+ .anima-time4{
+     width: 80px;
+     height: 50px;
+     border: 2px solid red;
+ }
+
+ .anima-time5{
+     width: 80px;
+     height: 50px;
+     border: 2px solid red;
+ }
+
+ .anima-time6{
+     width: 100px;
+     height: 100px;
+     border: 2px solid red;
+ }
+
+
+ .anima-time1{
+     animation-name: anda;
+     animation-duration: 1s;
+     animation-timing-function: ease-in;
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+     animation-delay: 0s;
+     /* animation: anda 5s; */
+
+     /* Ease-in = acelera
+        Ease-out = desacelera */
+ }
+
+ .anima-time2{
+
+     animation-name: anda;
+     animation-duration: 1s;
+     animation-timing-function: ease-in-out;
+     animation-direction: alternate;
+     animation-delay: 2s;
+     animation-iteration-count: 2;
+
+     /* animation: anda 5s; */
+
+     /* Ease-in = acelera
+        Ease-out = desacelera */
+ }
+
+ .anima-time3{
+
+animation-name: anda;
+animation-duration: 2s;
+animation-timing-function: ease-in-out;
+animation-direction: alternate;
+animation-delay: 2s;
+animation-iteration-count: 2;
+/* animation: anda 5s;
+
+/* Ease-in = acelera
+   Ease-out = desacelera */
+}
+
+.anima-time4{
+
+background: red;
+
+animation-name: anda;
+animation-duration: 3s;
+animation-timing-function: ease-in;
+animation-delay: 1s;
+animation-iteration-count: 2;
+animation-direction: alternate;
+animation-fill-mode: forwards;
+/* animation: anda 5s;
+
+/* Ease-in = acelera
+   Ease-out = desacelera */
+
+/* O forwards vai fazer que a propriedade que está no 100% seja a que perpetua
+  O backwards vai fazer que a propriedade que está no 0% seja a que perpetua */
+}
+
+.anima-time5{
+
+background: green;
+
+animation-name: anda;
+animation-duration: 2s;
+animation-timing-function: ease-in-out;
+animation-direction: alternate;
+animation-iteration-count: infinite;
+animation-fill-mode: backwards;
+animation-play-state: running;
+/* animation: anda 5s;
+
+/* Ease-in = acelera
+   Ease-out = desacelera */
+}
+
+.anima-time5:hover{
+    animation-play-state: paused;
+}
+
+.anima-time6{
+
+background: black;
+
+animation-name: anda;
+animation-duration: 2s;
+animation-timing-function: ease-in-out;
+animation-direction: alternate;
+animation-iteration-count: infinite;
+animation-fill-mode: backwards;
+animation-play-state: paused;
+/* animation: anda 5s;
+
+/* Ease-in = acelera
+   Ease-out = desacelera */
+}
+
+.anima-time6:hover{
+    animation-play-state: running;
+}
+
+
+ 
+
+</style>
+
+</head>
+
+<body>
+    <h2>Animation</h2>
+    <div class="anima-time1">
+    
+        <div> 1 </div>
+    </div>
+
+    <div class="anima-time2">
+    
+        <div> 2 </div>
+    </div>
+
+    <div class="anima-time3">
+    
+        <div> 3 </div>
+    </div>
+    
+    <div class="anima-time4">
+    
+        <div> 4 </div>
+    </div>
+
+    <div class="anima-time5">
+    
+        <div> 5 </div>
+    
+    </div>
+
+    <div class="anima-time6">
+    
+        <div> 6 </div>
+    
+    </div>
+</body>
+</html>
